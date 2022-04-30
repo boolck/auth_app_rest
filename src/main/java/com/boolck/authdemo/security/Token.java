@@ -1,4 +1,4 @@
-package com.hsbcdev.authdemo.security;
+package com.boolck.authdemo.security;
 
 import java.util.Objects;
 

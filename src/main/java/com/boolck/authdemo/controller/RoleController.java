@@ -1,9 +1,9 @@
-package com.hsbcdev.authdemo.controller;
+package com.boolck.authdemo.controller;
 
-import com.hsbcdev.authdemo.exception.AlreadyExistsException;
-import com.hsbcdev.authdemo.exception.NotFoundException;
-import com.hsbcdev.authdemo.model.Role;
-import com.hsbcdev.authdemo.repository.RoleRepository;
+import com.boolck.authdemo.exception.AlreadyExistsException;
+import com.boolck.authdemo.exception.NotFoundException;
+import com.boolck.authdemo.model.Role;
+import com.boolck.authdemo.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.hsbcdev.authdemo.exception;
+package com.boolck.authdemo.exception;
 
 public class NotFoundException extends Exception{
 

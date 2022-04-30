@@ -1,15 +1,15 @@
-package com.hsbcdev.authdemo.controller;
+package com.boolck.authdemo.controller;
 
-import com.hsbcdev.authdemo.exception.AlreadyExistsException;
-import com.hsbcdev.authdemo.exception.NotFoundException;
-import com.hsbcdev.authdemo.exception.NotSupportedException;
-import com.hsbcdev.authdemo.exception.TokenExpiredException;
-import com.hsbcdev.authdemo.model.Role;
-import com.hsbcdev.authdemo.model.User;
-import com.hsbcdev.authdemo.repository.RoleRepository;
-import com.hsbcdev.authdemo.repository.UserRepository;
-import com.hsbcdev.authdemo.security.Token;
-import com.hsbcdev.authdemo.security.TokenUtil;
+import com.boolck.authdemo.exception.AlreadyExistsException;
+import com.boolck.authdemo.exception.TokenExpiredException;
+import com.boolck.authdemo.repository.RoleRepository;
+import com.boolck.authdemo.repository.UserRepository;
+import com.boolck.authdemo.exception.NotFoundException;
+import com.boolck.authdemo.exception.NotSupportedException;
+import com.boolck.authdemo.model.Role;
+import com.boolck.authdemo.model.User;
+import com.boolck.authdemo.security.Token;
+import com.boolck.authdemo.security.TokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;

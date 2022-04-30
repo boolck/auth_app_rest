@@ -1,2 +1,2 @@
-# hsbcdev
-HSBC take home programming exercise : Simple auth and role app
+# REST based Basic Auth & Role application
+

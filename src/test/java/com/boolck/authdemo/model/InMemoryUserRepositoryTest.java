@@ -1,10 +1,11 @@
-package com.hsbcdev.authdemo.model;
+package com.boolck.authdemo.model;
 
-import com.hsbcdev.authdemo.exception.NotFoundException;
-import com.hsbcdev.authdemo.exception.TokenExpiredException;
-import com.hsbcdev.authdemo.repository.InMemoryUserRepository;
-import com.hsbcdev.authdemo.security.Token;
+import com.boolck.authdemo.exception.NotFoundException;
+import com.boolck.authdemo.exception.TokenExpiredException;
+import com.boolck.authdemo.repository.InMemoryUserRepository;
+import com.boolck.authdemo.security.Token;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -18,7 +19,7 @@ public class InMemoryUserRepositoryTest {
     public void testAddUser() throws NotFoundException, TokenExpiredException {
         User u = new User("test",new Token("testtoken"));
        userRepository.addUser("test",new Token("testtoken"));
-       assertEquals(u.getName(),userRepository.getUser("testtoken").getName());
+       Assertions.assertEquals(u.getName(),userRepository.getUser("testtoken").getName());
     }
 
     @Test (expected = NotFoundException.class)

@@ -1,9 +1,9 @@
-package com.hsbcdev.authdemo.repository;
+package com.boolck.authdemo.repository;
 
-import com.hsbcdev.authdemo.exception.NotFoundException;
-import com.hsbcdev.authdemo.exception.TokenExpiredException;
-import com.hsbcdev.authdemo.model.User;
-import com.hsbcdev.authdemo.security.Token;
+import com.boolck.authdemo.exception.NotFoundException;
+import com.boolck.authdemo.exception.TokenExpiredException;
+import com.boolck.authdemo.model.User;
+import com.boolck.authdemo.security.Token;
 import org.springframework.stereotype.Repository;
 
 @Repository

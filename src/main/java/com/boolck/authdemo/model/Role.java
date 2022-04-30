@@ -1,4 +1,4 @@
-package com.hsbcdev.authdemo.model;
+package com.boolck.authdemo.model;
 
 
 import java.util.Objects;

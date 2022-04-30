@@ -1,13 +1,14 @@
-package com.hsbcdev.authdemo.controller;
+package com.boolck.authdemo.controller;
 
-import com.hsbcdev.authdemo.exception.AlreadyExistsException;
-import com.hsbcdev.authdemo.exception.NotFoundException;
-import com.hsbcdev.authdemo.exception.NotSupportedException;
-import com.hsbcdev.authdemo.exception.TokenExpiredException;
-import com.hsbcdev.authdemo.model.Role;
-import com.hsbcdev.authdemo.model.User;
-import com.hsbcdev.authdemo.repository.InMemoryRoleRepository;
-import com.hsbcdev.authdemo.repository.InMemoryUserRepository;
+import com.boolck.authdemo.exception.AlreadyExistsException;
+import com.boolck.authdemo.exception.NotFoundException;
+import com.boolck.authdemo.exception.NotSupportedException;
+import com.boolck.authdemo.exception.TokenExpiredException;
+import com.boolck.authdemo.model.Role;
+import com.boolck.authdemo.model.User;
+import com.boolck.authdemo.repository.InMemoryUserRepository;
+import com.boolck.authdemo.repository.InMemoryRoleRepository;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -26,7 +27,7 @@ public class UserControllerTest {
     public void testAddUser() throws NotFoundException, AlreadyExistsException, TokenExpiredException {
         User u = userController.addUser("test","pwd");
         assertNotNull(u);
-        assertEquals(u,userController.getUser(u.getToken().getTokenId()));
+        Assert.assertEquals(u,userController.getUser(u.getToken().getTokenId()));
     }
 
     @Test (expected= AlreadyExistsException.class)

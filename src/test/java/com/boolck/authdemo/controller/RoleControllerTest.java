@@ -1,9 +1,9 @@
-package com.hsbcdev.authdemo.controller;
+package com.boolck.authdemo.controller;
 
-import com.hsbcdev.authdemo.exception.AlreadyExistsException;
-import com.hsbcdev.authdemo.exception.NotFoundException;
-import com.hsbcdev.authdemo.model.Role;
-import com.hsbcdev.authdemo.repository.InMemoryRoleRepository;
+import com.boolck.authdemo.exception.AlreadyExistsException;
+import com.boolck.authdemo.exception.NotFoundException;
+import com.boolck.authdemo.model.Role;
+import com.boolck.authdemo.repository.InMemoryRoleRepository;
 import org.junit.Before;
 import org.junit.Test;
 

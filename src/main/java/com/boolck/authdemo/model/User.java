@@ -1,6 +1,6 @@
-package com.hsbcdev.authdemo.model;
+package com.boolck.authdemo.model;
 
-import com.hsbcdev.authdemo.security.Token;
+import com.boolck.authdemo.security.Token;
 
 import java.util.HashSet;
 import java.util.Set;
